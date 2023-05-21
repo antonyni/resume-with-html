@@ -1,21 +1,38 @@
 html,body{
     background-color: black;
-    /* height:100%; */
-    font-family:  Helvetica, Arial,sans-serif;
-
+    height:100%;
+    font-family:  'Lato', Arial,sans-serif;
+    
 }
 .resume-container{
     background-color: white;
     height:1100px;
     width: 850px;
-    max-width:850px;
     position:relative;
     margin-left:auto;
     margin-right:auto;
-    padding-top: .5%;
+    padding-top: 1px;
+    box-sizing:border-box;
+    font-size:2px;
+
 
 
 }
+@media screen and (max-width: 600px) {
+    .resume-container{
+        height:550px;
+        width:425px;
+        font-size:1px;
+    }
+    .icons{
+        font-size:12em;
+    }
+  }
+
+.icons{
+    font-size:12em;
+}
+
 .resume-header{
     background-color: rgb(242, 242, 242);
     height:15%;
@@ -25,11 +42,11 @@ html,body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding-left:10%;
-
+    padding-left:5.7%;
 }
+
 .header-name{
-    font-size:70px;
+    font-size:35em;
     font-family: 'Raleway', sans-serif;
     letter-spacing: .06em;
 
@@ -42,10 +59,9 @@ html,body{
     text-shadow: 2px 0 black;
 }
 .header-role{
-    font-size:14px;
+    font-size:7em;
     letter-spacing: .5em;
     font-family:'Lato',sans-serif;
-    font-weight:100;
 }
 .header-text{
 }
@@ -56,20 +72,147 @@ html,body{
     top:9%;
     right:11%;
 
-}
+} 
 .resume-body{
     display: flex;
-    padding:5%;
-    height:74%; 
+    padding:5% 9%;
+    height:65%; 
 }
 .resume-body-left{
+    border-right-style:solid;
+    width:35%;
 }
 .resume-body-left-top{
-    height:33%;
+    height:22%;
+    border-bottom-style:solid;
 }
 .resume-body-left-middle{
-    height:33%;
+    height:52%;
+    border-bottom-style:solid;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
 }
 .resume-body-left-bottom{
-    height:33%;
+    position: relative;
+}
+.resume-body-right{
+    width:65%;
+
+}
+.resume-body-right-top{
+    height:18.2%;
+    border-bottom-style:solid;
+
+}
+.resume-body-right-bottom{
+    height:53%;
+
+
+}
+.circle{
+    border-radius: 50%;
+    border-style:solid;
+    border-width: .5em;
+    width:5em;
+    height:5em;
+    position:absolute;
+    background-color:white;
+    border-color:rgba(128,128,128,.5);
+    top:-1.9%;
+    right:-2.6%;
+}
+.banner{
+    display:flex;
+    padding-bottom: 10%;
+    margin-left:-3%;
+    margin-top:-4%;
+
+}
+.banner-text{
+    padding-left:5%;
+    color:gray;
+    font-size:8em;
+}
+
+.border{
+    border-color: rgba(0,0,0,.6);
+    border-width: .9em;
+}
+h1{
+    letter-spacing: .3em;
+    font-size:13em;
+}
+.small-text{
+    color:gray;
+
+
+}
+.left-list{
+    margin-left: -14%;
+    padding-bottom: 4%;
+    font-size: 7em;
+    letter-spacing:.15em;
+}
+.left-big-text{
+    padding-bottom:3%;
+}
+.text{
+    font-size:8em;
+}
+h2{
+    font-size:7em;
+
+}
+h3{
+    font-size:6.5em;
+    color:darkgray;
+}
+h4{
+    font-family: 'Lato';
+    font-size:6.5em;
+    color:gray;
+}
+.left-shift{
+    margin-left: -4.1%;
+}
+.education{
+    padding-top:10%;
+    padding-bottom:7%;
+}
+.right-text{
+    padding-left:10%;
+}
+
+.indent{
+    padding-left:5%;
+    color:gray;
+}
+
+a{
+    color:black;
+}
+
+.right-list{
+    padding-bottom: 2%;
+    font-size: 7em;
+    color:gray;
+}
+.projects{
+    padding-top:4.1%;
+    padding-bottom:3%;
+}
+
+.circle2{
+    border-radius: 50%;
+    border-style:solid;
+    border-width: .5em;
+    width:5em;
+    height:5em;
+    position:absolute;
+    background-color:white;
+    border-color:rgba(128,128,128,.5);
+    top: -14%;
+    right:-2.7%;
 }
